@@ -16,4 +16,14 @@ def getDegreesBetween(timeStr):
 
 
 
-#print(getDegreesBetween("1:30"))
+def degreesUnitTest():
+    time = "1:30"
+    print("Testing with time: ", time)
+    result = getDegreesBetween(time)
+    if(result != 150):
+        print("Failed: Expected 150 but returned ", result)
+    else:
+        print("Succeded: Returned ", result)
+
+
+degreesUnitTest()
